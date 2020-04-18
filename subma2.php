@@ -10,7 +10,7 @@ echo "\e[96m  ==============================================\n";
 echo "\e[96m  =\e[95m 🤸  1. VOUCHER GOFOOD EATLAH ✓          🇮🇩 \e[96m=\n";
 echo "\e[96m  =\e[95m 🤸  2. VOUCHER GOFOOD 15K MINBEL 30K  ✓ 🇮🇩 \e[96m=\n";
 echo "\e[96m  =\e[95m 🤸  3. VOUCHER GOFOOD 10K MINBEL 30K  ✓ 🇮🇩 \e[96m=\n";
-echo "\e[96m  =\e[95m 🤸  4. VOUCHER DISKON GOVID-19    ✓     🇮🇩 \e[96m=\n";
+echo "\e[96m  =\e[95m 🤸  4. VOUCHER DISKON   CENTURY ✓     🇮🇩 \e[96m=\n";
 echo "\e[96m  ==============================================\n";
 echo "\e[96m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
 echo "\e[95m Sudah Punya User Id (Y/N ?: ";	
@@ -136,7 +136,7 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         sleep(1);
         }
         sleep(5);
-        $boba09 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code"BIARKAMUSEHAT"}');
+        $boba09 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code"CENTURY"}');
         $messageboba09 = fetch_value($boba09,'"message":"','"');
         echo "\n".color("green","🔓▶️ Message: ".$messageboba09);
         sleep(3);
